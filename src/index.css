@@ -1,0 +1,20 @@
+/* Fonts From Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  /*Colors*/
+  --first-color: #222223;
+  --second-color: #756B6B;
+  --third-color: #FF843F;
+  --section-color: #D9D9D9;
+  /*Fonst and Typography*/
+  --body-font: 'Open Sans', sans-serif;
+  --heading1-font: 'Prosto One', cursive;
+  --main-font-size: 32px;
+  --sub-font-size: 16px;
+  --normal-font-size: 16px;
+}
