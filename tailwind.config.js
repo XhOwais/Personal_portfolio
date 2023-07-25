@@ -24,6 +24,9 @@ export default {
         'sub': '16px',
         'normal': '16px',
       },
+      width: {
+        'Skil': '400px', // Add your custom width value here
+      },
     },
   },
   plugins: [],

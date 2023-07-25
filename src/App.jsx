@@ -19,18 +19,6 @@ const App= () =>{
         completeAboutMe={{
           name: 'Owais Shah',
           desig: 'Web Developer',
-          /*Personal Info */
-          birthdate: '09.Nov.2005',
-          age: '18',
-          adress: 'New Karachi Town',
-          email: 'xhowais@gmail.com',
-          phone: '+92 317 2906 746', 
-          // Knowledge
-          know1: 'HTML5,CSS3,JavaScript,ES6',
-          know2: 'Tailwind CSS,Bootstrap',
-          know3: 'React,Vue,Vite',
-          know4: 'Node Js,Next Js',
-          know5: 'Photoshop,Adobe XD,Figma',
           // Interest
           inter1: 'Learning Ai',
           inter2: 'Ai Critical Thinking',
