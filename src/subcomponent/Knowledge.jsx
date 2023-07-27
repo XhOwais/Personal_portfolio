@@ -5,8 +5,8 @@ const KnowledgeComp = ({ knowledge }) => {
       <div className="knowledgeList">
         <ul>
           {knowledge.map((knowledgeItem, index) => (
-            <li key={index} className='flex'>
-              <img src={Polygon} alt="" srcset="" />
+            <li key={index} className='flex  pb-2 font-body'>
+              <img className=' pr-3' src={Polygon} alt="" srcset="" />
               <p>{knowledgeItem.data}</p>
             </li>
           ))}

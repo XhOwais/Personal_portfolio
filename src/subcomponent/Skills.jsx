@@ -9,11 +9,11 @@ const Skills = ({ Skills }) => {
   return (
     <>
       <div className="programingSkill pb-4">
-        <ul>
+        <ul className=' pb-4'>
           <li>
             <div className="aboutSkill flex justify-between w-Skil">
-              <h2 className="domain">{Skills.domain}</h2>
-              <h2 className="progress">{Skills.progress}</h2>
+              <h2 className="domain font-heading1 text-first-color">{Skills.domain}</h2>
+              <h2 className="progress font-heading1 text-first-color">{Skills.progress}</h2>
             </div>
             <div className="progressba absolute flex barfrom bg-section-color rounded-e absolute -z-10">
               <div

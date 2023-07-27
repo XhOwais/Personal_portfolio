@@ -7,8 +7,8 @@ const InterestsComp = ({ interests }) => {
       <div className="interestsList">
         <ul>
           {interests.map((interest, index) => (
-            <li key={index} className='flex'>
-              <img src={Polygon} alt="" />
+            <li key={index} className='flex pb-2 font-body'>
+              <img className=' pr-3' src={Polygon} alt="" />
               <p>{interest.data}</p>
             </li>
           ))}

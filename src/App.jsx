@@ -19,14 +19,6 @@ const App= () =>{
         completeAboutMe={{
           name: 'Owais Shah',
           desig: 'Web Developer',
-          // Interest
-          inter1: 'Learning Ai',
-          inter2: 'Ai Critical Thinking',
-          inter3: 'Create Web Apps',
-          inter4: 'Custom Website',
-          inter5: 'Making Ui/Ux',
-          inter6: 'Site Optomization',
-          // Programing Skills
         }}
         />
     </>

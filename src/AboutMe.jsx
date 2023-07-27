@@ -6,9 +6,8 @@ import KnowledgeComp from './subcomponent/Knowledge.jsx';
 import InterestsComp from '../src/subcomponent/Interests.jsx';
 
 const AboutMe = ({completeAboutMe}) =>{
-  const longIntro = `Hi, my name is Owais Shah and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.
-
-  One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on their own for years.`;
+  const longIntro = `Hi, my name is Owais Shah and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.`;
+  const Longintro2 =' One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on their own for years.'
   const skilltype ={
     skilltype1: 'Programing Skills',
     skilltype2: 'Designing Skills',
@@ -111,36 +110,40 @@ const AboutMe = ({completeAboutMe}) =>{
   
     return(
          <>
-         <div className="AboutMe w-full">
-          <div className="IntroAboutMe">
-            <h1 className=' font-heading1 text-main text-first-color'>{completeAboutMe.name}</h1> 
-            <h4 className=' font-heading1 text-body text-second-color'>{completeAboutMe.desig}</h4>
-            <p className=' font-body text-normal text-second-color'>{longIntro}</p>
+         <div className=' flex p-28'>
+         <div className="AboutMe w-full grid grid-cols-4 gap-4 w-3/4">
+          <div className="IntroAboutMe col-start-1 col-end-5">
+            <h1 className=' font-heading1 text-main text-first-color pb-0'>{completeAboutMe.name}</h1> 
+            <h4 className=' font-heading1 text-body text-second-color pb-4'>{completeAboutMe.desig}</h4>
+            <p className=' font-body text-normal text-second-color'>{longIntro}<br/><br/>{Longintro2}</p>
           </div>
-          <div className="personalInfo">
-            <h2>Personal Info</h2>
-            <PersonalInfoCom personalInfo={personalInfo} />
+          <div className="personalInfo col-start-1 col-end-3">
+            <h2 className=' font-heading1 text-main pb-8'>Personal Info</h2>
+            <PersonalInfoCom className=' col-start-1 col-end-2' personalInfo={personalInfo} />
           </div>
-          <div className="knowledge">
-            <h2>Knowledge</h2>
+          <div className="knowledge col-start-3 col-end-4">
+            <h2 className=' font-heading1 text-main pb-8'>Knowledge</h2>
             <KnowledgeComp knowledge={knowledge} />
           </div>
-          <div className="Interest">
-            <h2>Interest</h2>
+          <div className="Interest col-start-4 col-end-5">
+            <h2 className=' font-heading1 text-main pb-8'>Interest</h2>
             <InterestsComp interests={interests} />
           </div>
          </div>
+         <div className=' h-screen '>
         <div className="skills">
-        <h2>{skilltype.skilltype1}</h2>
+        <h2 className=' font-heading1 text-main pb-8'>{skilltype.skilltype1}</h2>
         {skillsData.map((skill, index) => (
           <Skills key={index} Skills={skill} />
         ))}
       </div>
       <div className="skills">
-        <h2>{skilltype.skilltype2}</h2>
+        <h2 className=' font-heading1 text-main pb-8'>{skilltype.skilltype2}</h2>
         {skillsData2.map((skill, index) => (
           <Skills key={index} Skills={skill} />
         ))}
+      </div>
+      </div>
       </div>
          </>
     );
