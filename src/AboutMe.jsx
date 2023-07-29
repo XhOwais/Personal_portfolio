@@ -110,35 +110,35 @@ const AboutMe = ({completeAboutMe}) =>{
   
     return(
          <>
-         <div className=' flex p-28'>
-         <div className="AboutMe w-full grid grid-cols-4 gap-4 w-3/4">
+         <div className=' flex p-28 max-xl:grid'>
+         <div className="AboutMe w-full grid grid-cols-4 grid-rows-6 gap-4 w-3/4 max-lg:block">
           <div className="IntroAboutMe col-start-1 col-end-5">
             <h1 className=' font-heading1 text-main text-first-color pb-0'>{completeAboutMe.name}</h1> 
             <h4 className=' font-heading1 text-body text-second-color pb-4'>{completeAboutMe.desig}</h4>
             <p className=' font-body text-normal text-second-color'>{longIntro}<br/><br/>{Longintro2}</p>
           </div>
-          <div className="personalInfo col-start-1 col-end-3">
+          <div className="personalInfo col-start-1 col-end-2 row-start-3 col-end-5 w-72">
             <h2 className=' font-heading1 text-main pb-8'>Personal Info</h2>
             <PersonalInfoCom className=' col-start-1 col-end-2' personalInfo={personalInfo} />
           </div>
-          <div className="knowledge col-start-3 col-end-4">
+          <div className="knowledge row-start-2 row-end-3 col-start-3 col-end-4 row-start-3 col-end-5">
             <h2 className=' font-heading1 text-main pb-8'>Knowledge</h2>
             <KnowledgeComp knowledge={knowledge} />
           </div>
-          <div className="Interest col-start-4 col-end-5">
+          <div className="Interest col-start-1 col-end-3 row-start-5 col-end-7  ">
             <h2 className=' font-heading1 text-main pb-8'>Interest</h2>
             <InterestsComp interests={interests} />
           </div>
          </div>
-         <div className=' h-screen '>
+         <div className=' h-auto'>
         <div className="skills">
-        <h2 className=' font-heading1 text-main pb-8'>{skilltype.skilltype1}</h2>
+        <h2 className=' font-heading1 text-main lg:pb-8'>{skilltype.skilltype1}</h2>
         {skillsData.map((skill, index) => (
           <Skills key={index} Skills={skill} />
         ))}
       </div>
       <div className="skills">
-        <h2 className=' font-heading1 text-main pb-8'>{skilltype.skilltype2}</h2>
+        <h2 className=' font-heading1 text-main lg:pb-8'>{skilltype.skilltype2}</h2>
         {skillsData2.map((skill, index) => (
           <Skills key={index} Skills={skill} />
         ))}

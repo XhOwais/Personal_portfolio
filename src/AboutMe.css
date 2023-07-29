@@ -1,3 +1,8 @@
 .AboutMe{
-    height: 100vh;
+    height: 130vh;
+}
+@media (max-width: 1040px) {
+    .AboutMe{
+        height: 150vh;
+    }
 }

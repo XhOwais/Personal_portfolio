@@ -5,11 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App
-      completeIntro={{
-        name: 'Owais',
-        Desig: 'Web Developer'
-      }}
-    />
+    <App/>
   </React.StrictMode>,
 )
