@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Hero from "./hero.jsx"
+import Hero from "./Hero.jsx"
 import Header from './Header.jsx'
 import AboutMe from "./AboutMe.jsx";
 import ServicesSecComp from './ServicesSec.jsx';
