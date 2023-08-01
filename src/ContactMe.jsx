@@ -3,12 +3,17 @@ import logoYT from '../src/assets/youtube.png'
 import logoGIT from '../src/assets/github.png'
 import logoLINK from '../src/assets/linkdin.png'
 import logoINSTA from '../src/assets/insta.png'
+import behance from '../src/assets/behance.png'
+import github from '../src/assets/github1.png'
+import devfolio from '../src/assets/devfolio.png'
+import layer from '../src/assets/Layer 2.png'
 
 const ContactMe = () => {
     const contactData = {
         heading: 'Just Say Hi.',
         text: 'I am always open to discuss your project and talk about new things.',
         email: 'xhowais@gmail.com',
+        designDevelopBy: '@Owais Shah',
     }
     return (
         <>
@@ -41,8 +46,20 @@ const ContactMe = () => {
                         <input placeholder='Your budget (optional)' className=' bg-first-color h-10 mb-4 border-b-2 text-section-color' type="text" />
                         <input placeholder='Your project discription' className=' bg-first-color h-10 mb-4 border-b-2 text-section-color' type="text" />
                     </form>
-                    <button className=' w-36 h-16 bg-third-color float-right rounded-xl'>Submit</button>
+                    <button className=' w-36 h-16 bg-third-color text-white float-right rounded-xl'>Submit</button>
                 </div>
+            </div>
+            <div className="  px-16 mb-6 footer w-screen flex justify-between items-center">
+                <div className="developBy">
+                    <h4 className=' font-body text-second-color'>Design & Develop By</h4>
+                    <h1 className=' font-heading1 text-2xl text-first-color'>{contactData.designDevelopBy}</h1>
+                </div>
+                <div className="links flex w-60 justify-between">
+                    <div className=' w-16 h-16 bg-first-color rounded flex justify-center items-center hover:bg-third-color p-3'><a href=""><img src={behance} alt="" srcset="" /></a></div>
+                    <div className=' w-16 h-16 bg-first-color rounded flex justify-center items-center hover:bg-third-color p-3'><a href="https://github.com/XhOwais/Personal_portfolio"><img src={github} alt="" srcset="" /></a></div>
+                    <div className=' w-16 h-16 bg-first-color rounded flex justify-center items-center hover:bg-third-color p-3'><a href=""><img src={devfolio} alt="" srcset="" /></a></div>
+                </div>
+                <button className=' h-14 w-40 bg-first-color text-white rounded-xl hover:bg-third-color'>Download CV</button>
             </div>
         </>
     );
