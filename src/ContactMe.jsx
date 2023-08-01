@@ -12,8 +12,8 @@ const ContactMe = () => {
     }
     return (
         <>
-            <div className="main w-screen h-screen items-center 2xl:flex justify-between max-2xl:py-16 px-20">
-                <div className="contant 2xl:w-2/5 pb-10">
+            <div className="main w-screen h-screen items-center xl:flex justify-between max-2xl:py-16 px-20">
+                <div className="contant xl:w-2/5 pb-10">
                     <h1 className=' font-heading1 text-main text-first-color py-8'>
                         {contactData.heading}
                     </h1>
@@ -34,7 +34,7 @@ const ContactMe = () => {
                         </div>
                     </ul>
                 </div>
-                <div className="form h-96 2xl:w-2/5 bg-first-color rounded-xl">
+                <div className="form h-96 xl:w-2/5 bg-first-color rounded-xl">
                     <form className=' grid p-14' action="">
                         <input placeholder='Your name' className=' bg-first-color h-10 mb-4 border-b-2 text-section-color' type="text" />
                         <input placeholder='Your email adress ' className=' bg-first-color h-10 mb-4 border-b-2 text-section-color' type="email" name="" id="" />
