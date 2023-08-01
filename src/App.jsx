@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import Hero from "./Hero.jsx"
+import './App.css'
+import Hero from "./Hero.jsx";
 import Header from './Header.jsx'
 import AboutMe from "./AboutMe.jsx";
 import ServicesSecComp from './ServicesSec.jsx';
 import Portfolio from './Portfolio.jsx';
+import ContactMe from './ContactMe.jsx';
 
+window.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
 const App = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
@@ -31,6 +36,8 @@ const App = () => {
       {activeSection === 'about' && <AboutMe completeAboutMe={{ name: 'Owais Shah', desig: 'Web Developer' }} />}
       {activeSection === 'services' && <ServicesSecComp />}
       {activeSection === 'portfolio' && <Portfolio />}
+      {activeSection === 'contact' && <ContactMe />}
+
     </>
   );
 };
