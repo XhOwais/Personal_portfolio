@@ -7,9 +7,9 @@ import ServicesSecComp from './ServicesSec.jsx';
 import Portfolio from './Portfolio.jsx';
 import ContactMe from './ContactMe.jsx';
 
-window.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-});
+// window.addEventListener('contextmenu', function (e) {
+//   e.preventDefault();
+// });
 const App = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
